@@ -1,0 +1,2 @@
+all:
+	g++ --std=c++17 ../src/*.cpp ../imgui/*.cpp ../opengl/include/glad/glad.c -I"../opengl/include" -L"../opengl/lib" -lopengl32 -lglfw3 -lglfw3dll -ldwmapi -lcomdlg32 -lgdi32 -lwinmm -luser32 -lMinHook -shared -static -static-libgcc -static-libstdc++ -o evil.dll
